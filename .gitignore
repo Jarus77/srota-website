@@ -4,22 +4,23 @@ out/
 .agents/
 skills-lock.json
 
-# Large video files
-*.mp4
+# Raw source assets in project root (already copied to public/)
+/account.jpeg
+/apple-silicon.jpeg
+/apps.png
+/audio.jpeg
+/choice.jpeg
+/hinglish.jpeg
+/image.png
+/local.jpeg
+/local2.jpeg
+/no-subscription.jpeg
+/photo.jpeg
+/product.png
+/srota.png
+/wave.jpeg
+/Fermeon_files/
 
-# Raw assets (not needed in repo, already copied to public/)
-account.jpeg
-apple-silicon.jpeg
-apps.png
-audio.jpeg
-choice.jpeg
-hinglish.jpeg
-image.png
-local.jpeg
-local2.jpeg
-no-subscription.jpeg
-photo.jpeg
-product.png
-srota.png
-wave.jpeg
-Fermeon_files/
+# Large videos in project root (not the ones in public/)
+/Boy Flies Fast Above Mountain.mp4
+/Clipvideo.mp4

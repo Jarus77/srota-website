@@ -19,9 +19,13 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 body {
+  overflow-x: hidden;
+  max-width: 100%;
   background-color: var(--bg);
   background-image:
     linear-gradient(var(--grid-line) 1px, transparent 1px),
@@ -86,6 +90,36 @@ section {
 
 .typewriter-text.animate {
   animation: typing 3s steps(80, end) forwards;
+}
+
+/* ─── Mobile (≤ 640px) ─────────────────────────────── */
+@media (max-width: 640px) {
+  /* Prevent any child from blowing past viewport */
+  * {
+    max-width: 100%;
+  }
+
+  /* Single-column grids */
+  section > div[style*="grid"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Tighter section padding */
+  section {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  /* Hero headline smaller */
+  h1 {
+    font-size: clamp(36px, 9vw, 52px) !important;
+  }
+
+  /* Wider pills / buttons */
+  a[style*="border-radius: 999px"] {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
 }
 
 /* Scrollbar */

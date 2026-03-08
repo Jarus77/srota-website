@@ -19,6 +19,11 @@ const instrumentSerif = Instrument_Serif({
   style: ['normal', 'italic'],
 })
 
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+}
+
 export const metadata: Metadata = {
   title: 'Srota — Voice Dictation for Mac',
   description: 'On-device voice transcription that works in any app. 100% local, Hinglish support, fn-key trigger. Free for macOS.',

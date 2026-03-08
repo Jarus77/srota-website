@@ -83,7 +83,8 @@ export default function WorksAnywhere() {
                 width={260}
                 height={200}
                 style={{
-                  width: '260px',
+                  width: '100%',
+                  maxWidth: '260px',
                   height: 'auto',
                   borderRadius: '8px',
                   display: 'block',

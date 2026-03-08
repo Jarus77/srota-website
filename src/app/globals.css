@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #F8F6F2;
+  --grid-line: rgba(80, 60, 40, 0.12);
+  --accent: #1A9E7A;
+  --text-primary: #1C1A16;
+  --text-secondary: rgba(28, 26, 22, 0.52);
+  --glass-bg: rgba(237, 234, 227, 0.82);
+  --glass-border: rgba(0, 0, 0, 0.08);
+  --hero-cream: #F7F3EE;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  background-image:
+    linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+  background-size: 48px 48px;
+  background-attachment: fixed;
+  color: var(--text-primary);
+  font-family: var(--font-geist-sans, 'Geist', system-ui, sans-serif);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Section base */
+section {
+  position: relative;
+  z-index: 1;
+}
+
+/* Instrument Serif utility */
+.serif {
+  font-family: var(--font-instrument-serif, 'Instrument Serif', Georgia, serif);
+}
+
+.serif-italic {
+  font-family: var(--font-instrument-serif, 'Instrument Serif', Georgia, serif);
+  font-style: italic;
+}
+
+/* Waveform animation */
+@keyframes waveBar {
+  0%, 100% { transform: scaleY(0.3); }
+  50% { transform: scaleY(1); }
+}
+
+.wave-bar {
+  display: inline-block;
+  width: 3px;
+  background-color: var(--accent);
+  border-radius: 2px;
+  animation: waveBar 1s ease-in-out infinite;
+  transform-origin: bottom;
+}
+
+/* Typewriter effect */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.typewriter-text {
+  overflow: hidden;
+  white-space: pre-wrap;
+  width: 0;
+  display: block;
+}
+
+.typewriter-text.animate {
+  animation: typing 3s steps(80, end) forwards;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(26, 158, 122, 0.3);
+  border-radius: 3px;
+}

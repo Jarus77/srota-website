@@ -1,0 +1,25 @@
+node_modules/
+.next/
+out/
+.agents/
+skills-lock.json
+
+# Large video files
+*.mp4
+
+# Raw assets (not needed in repo, already copied to public/)
+account.jpeg
+apple-silicon.jpeg
+apps.png
+audio.jpeg
+choice.jpeg
+hinglish.jpeg
+image.png
+local.jpeg
+local2.jpeg
+no-subscription.jpeg
+photo.jpeg
+product.png
+srota.png
+wave.jpeg
+Fermeon_files/

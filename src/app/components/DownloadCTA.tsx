@@ -29,7 +29,6 @@ export default function DownloadCTA() {
 
         <a
           href={DMG_DOWNLOAD_URL}
-          download="srota.dmg"
           style={{
             display: 'inline-flex',
             alignItems: 'center',

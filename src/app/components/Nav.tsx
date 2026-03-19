@@ -162,7 +162,6 @@ function DownloadBtn({ fullWidth }: { fullWidth?: boolean }) {
   return (
     <a
       href={DMG_DOWNLOAD_URL}
-      download="srota.dmg"
       style={{
         background: '#F7F3EE',
         color: '#1C1A16',

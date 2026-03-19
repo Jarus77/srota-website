@@ -61,7 +61,7 @@ src/app/
     Privacy.tsx
     DownloadCTA.tsx
 public/
-  logo.png
+  srota.png
   screenshot-dashboard.png
   screenshot-menubar.png
   video/

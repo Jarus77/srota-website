@@ -28,8 +28,8 @@ export const metadata: Metadata = {
   title: 'Srota — Voice Dictation for Mac',
   description: 'On-device voice transcription that works in any app. 100% local, Hinglish support, fn-key trigger. Free for macOS.',
   icons: {
-    icon: '/logo.png',
-    apple: '/logo.png',
+    icon: '/srota.png',
+    apple: '/srota.png',
   },
   openGraph: {
     title: 'Srota — Speak. It types.',

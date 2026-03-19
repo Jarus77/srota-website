@@ -223,6 +223,7 @@ export default function Hero() {
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '16px' }}>
           <a
             href={DMG_DOWNLOAD_URL}
+            download="srota.dmg"
             style={{
               display: 'inline-flex',
               alignItems: 'center',

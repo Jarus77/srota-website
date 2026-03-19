@@ -2,6 +2,8 @@
 
 import Image from 'next/image'
 
+import { DMG_DOWNLOAD_URL } from '../downloadUrl'
+
 export default function DownloadCTA() {
   return (
     <section
@@ -26,7 +28,7 @@ export default function DownloadCTA() {
         </h2>
 
         <a
-          href="https://github.com/Jarus77/srota/releases/download/v2.0.0/Srota.dmg"
+          href={DMG_DOWNLOAD_URL}
           style={{
             display: 'inline-flex',
             alignItems: 'center',

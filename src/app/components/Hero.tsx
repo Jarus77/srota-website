@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import { DMG_DOWNLOAD_URL } from '../downloadUrl'
 
 const WORDS = ['Local', 'No account', 'No subscription']
 
@@ -221,7 +222,7 @@ export default function Hero() {
         {/* Bottom group — CTA */}
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '16px' }}>
           <a
-            href="https://github.com/Jarus77/srota/releases/download/v2.0.0/Srota.dmg"
+            href={DMG_DOWNLOAD_URL}
             style={{
               display: 'inline-flex',
               alignItems: 'center',

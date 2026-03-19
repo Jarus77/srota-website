@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from 'react'
 
+import { DMG_DOWNLOAD_URL } from '../downloadUrl'
+
 export default function Nav() {
   const [scrollY, setScrollY] = useState(0)
   const [isMobile, setIsMobile] = useState(false)
@@ -159,7 +161,7 @@ export default function Nav() {
 function DownloadBtn({ fullWidth }: { fullWidth?: boolean }) {
   return (
     <a
-      href="https://github.com/Jarus77/srota/releases/download/v2.0.0/Srota.dmg"
+      href={DMG_DOWNLOAD_URL}
       style={{
         background: '#F7F3EE',
         color: '#1C1A16',

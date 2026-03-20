@@ -24,6 +24,11 @@
   ],
   "redirects": [
     {
+      "source": "/release-notes/0.1.2.html",
+      "destination": "/release-notes/0.1.2",
+      "permanent": false
+    },
+    {
       "source": "/downloads/Srota.dmg",
       "destination": "https://github.com/Jarus77/srota-mac/releases/download/v0.1.2/Srota.dmg",
       "permanent": false

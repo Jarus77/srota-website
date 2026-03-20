@@ -1,0 +1,18 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>Srota</title>
+        <description>Srota update feed</description>
+        <language>en</language>
+        <item>
+            <title>0.1.2</title>
+            <pubDate>Sat, 21 Mar 2026 02:46:47 +0530</pubDate>
+            <sparkle:version>0.1.2</sparkle:version>
+            <sparkle:shortVersionString>0.1.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>10.13</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <sparkle:releaseNotesLink>https://susrota.com/release-notes/0.1.2.html</sparkle:releaseNotesLink>
+            <enclosure url="https://susrota.com/downloads/Srota.dmg" length="14702406" type="application/octet-stream" sparkle:edSignature="wiQA/xwOHlalIYs6g4c7jBtZequeIASzK84JDkteA54+ZeR/3bKMQyIDHr6BESxXpRAs4D7pIOjg47adpz8DCA=="/>
+        </item>
+    </channel>
+</rss>

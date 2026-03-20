@@ -1,0 +1,32 @@
+{
+  "headers": [
+    {
+      "source": "/appcast.xml",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/xml; charset=utf-8"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, s-maxage=0, must-revalidate, no-cache"
+        },
+        {
+          "key": "Pragma",
+          "value": "no-cache"
+        },
+        {
+          "key": "Expires",
+          "value": "0"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/downloads/Srota.dmg",
+      "destination": "https://github.com/Jarus77/srota-mac/releases/download/v0.1.2/Srota.dmg",
+      "permanent": false
+    }
+  ]
+}

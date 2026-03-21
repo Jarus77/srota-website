@@ -82,15 +82,15 @@ function WaveformPreview() {
 
 export default function HowItWorks() {
   return (
-    <section id="how-it-works" style={{ padding: '76px 24px' }}>
-      <div style={{ maxWidth: '980px', margin: '0 auto' }}>
+    <section id="how-it-works" style={{ padding: '58px 24px' }}>
+      <div style={{ maxWidth: '940px', margin: '0 auto' }}>
         <h2
           className="serif"
           style={{
             fontSize: 'clamp(32px, 4vw, 42px)',
             fontWeight: 400,
             textAlign: 'center',
-            marginBottom: '40px',
+            marginBottom: '28px',
             color: 'var(--text-primary)',
           }}
         >
@@ -101,7 +101,7 @@ export default function HowItWorks() {
           style={{
             display: 'grid',
             gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
-            gap: '18px',
+            gap: '14px',
             position: 'relative',
           }}
         >
@@ -111,19 +111,19 @@ export default function HowItWorks() {
               style={{
                 display: 'flex',
                 flexDirection: 'column',
-                padding: '24px 22px 26px',
+                padding: '20px 18px 22px',
                 position: 'relative',
-                borderRadius: '22px',
+                borderRadius: '20px',
                 border: '1px solid rgba(26,158,122,0.12)',
                 background: 'rgba(255,255,255,0.7)',
                 boxShadow: '0 8px 24px rgba(28,26,22,0.04)',
               }}
             >
-              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '18px' }}>
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '14px' }}>
                 <div
                   className="serif"
                   style={{
-                    fontSize: '42px',
+                    fontSize: '38px',
                     fontWeight: 400,
                     color: 'var(--accent)',
                     lineHeight: 1,
@@ -148,7 +148,7 @@ export default function HowItWorks() {
                 )}
               </div>
 
-              <div style={{ marginBottom: '18px' }}>{step.media}</div>
+              <div style={{ marginBottom: '14px' }}>{step.media}</div>
 
               <h3
                 style={{

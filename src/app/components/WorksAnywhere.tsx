@@ -6,7 +6,7 @@ export default function WorksAnywhere() {
   return (
     <section
       style={{
-        padding: '76px 24px',
+        padding: '58px 24px',
         background: 'rgba(0,0,0,0.03)',
         borderTop: '1px solid rgba(0,0,0,0.06)',
         borderBottom: '1px solid rgba(0,0,0,0.06)',
@@ -14,36 +14,36 @@ export default function WorksAnywhere() {
     >
       <div
         style={{
-          maxWidth: '980px',
+          maxWidth: '920px',
           margin: '0 auto',
           display: 'grid',
           gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
-          gap: '40px',
+          gap: '28px',
           alignItems: 'center',
         }}
       >
         {/* Left: text */}
-        <div style={{ maxWidth: '430px' }}>
+        <div style={{ maxWidth: '420px' }}>
           <h2
             className="serif"
             style={{
               fontSize: 'clamp(28px, 3.5vw, 38px)',
               fontWeight: 400,
               color: 'var(--text-primary)',
-              marginBottom: '14px',
+              marginBottom: '12px',
               lineHeight: 1.25,
             }}
           >
             Works wherever<br />your cursor is.
           </h2>
 
-          <div style={{ marginBottom: '14px' }}>
+          <div style={{ marginBottom: '10px' }}>
             {apps.map((app, i) => (
               <span
                 key={app}
                 style={{
                   color: i % 2 === 0 ? 'var(--accent)' : 'var(--text-secondary)',
-                  fontSize: '18px',
+                  fontSize: '17px',
                   marginRight: '10px',
                   fontWeight: i % 2 === 0 ? 500 : 400,
                   lineHeight: 1.8,
@@ -76,17 +76,17 @@ export default function WorksAnywhere() {
                 border: '1px solid rgba(0,0,0,0.09)',
                 borderRadius: '18px',
                 padding: '8px',
-                boxShadow: '0 26px 60px rgba(0,0,0,0.18)',
+                boxShadow: '0 20px 42px rgba(0,0,0,0.14)',
               }}
             >
               <Image
                 src="/screenshot-menubar.png"
                 alt="Srota menu bar dropdown"
-                width={320}
-                height={250}
+                width={300}
+                height={234}
                 style={{
                   width: '100%',
-                  maxWidth: '320px',
+                  maxWidth: '300px',
                   height: 'auto',
                   borderRadius: '12px',
                   display: 'block',

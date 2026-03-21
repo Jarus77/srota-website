@@ -42,7 +42,7 @@ export default function Features() {
   const [hovered, setHovered] = useState<number | null>(null)
 
   return (
-    <section id="features" style={{ padding: '76px 24px 72px' }}>
+    <section id="features" style={{ padding: '56px 24px 52px' }}>
       <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
         <h2
           className="serif"
@@ -61,7 +61,7 @@ export default function Features() {
             width: '48px',
             height: '1px',
             background: 'var(--accent)',
-            margin: '0 auto 40px',
+            margin: '0 auto 28px',
           }}
         />
 
@@ -69,7 +69,7 @@ export default function Features() {
           style={{
             display: 'grid',
             gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
-            gap: '20px',
+            gap: '18px',
           }}
         >
           {features.map((f, i) => (

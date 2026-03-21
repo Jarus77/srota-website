@@ -7,23 +7,23 @@ export default function DownloadCTA() {
     <section
       id="download"
       style={{
-        padding: '32px 24px 88px',
+        padding: '12px 24px 56px',
         textAlign: 'center',
       }}
     >
       <div
         style={{
-          maxWidth: '700px',
+          maxWidth: '760px',
           margin: '0 auto',
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
-          gap: '20px',
-          padding: '40px 28px',
-          borderRadius: '28px',
+          gap: '16px',
+          padding: '30px 28px',
+          borderRadius: '24px',
           border: '1px solid rgba(0,0,0,0.08)',
           background: 'rgba(255,255,255,0.72)',
-          boxShadow: '0 18px 48px rgba(28,26,22,0.06)',
+          boxShadow: '0 14px 36px rgba(28,26,22,0.06)',
         }}
       >
         <h2
@@ -46,7 +46,7 @@ export default function DownloadCTA() {
             gap: '10px',
             background: 'var(--accent)',
             color: '#fff',
-            padding: '16px 40px',
+            padding: '15px 34px',
             borderRadius: '999px',
             textDecoration: 'none',
             fontSize: '17px',
@@ -69,7 +69,7 @@ export default function DownloadCTA() {
           </svg>
         </a>
 
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
           <p style={{ fontSize: '13px', color: 'var(--text-secondary)' }}>
             Requires macOS 14+ · Apple Silicon only
           </p>
@@ -78,7 +78,7 @@ export default function DownloadCTA() {
           </p>
         </div>
 
-        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '10px', marginTop: '4px' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '8px', marginTop: '2px' }}>
           <p style={{ fontSize: '13px', color: 'var(--text-secondary)', letterSpacing: '0.01em' }}>
             Questions, feedback, or just want to say hi?
           </p>

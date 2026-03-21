@@ -23,7 +23,7 @@ export default function Home() {
       <footer
         style={{
           borderTop: '1px solid rgba(0,0,0,0.07)',
-          padding: '24px',
+          padding: '18px 24px 20px',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'space-between',

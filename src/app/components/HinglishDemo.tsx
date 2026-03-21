@@ -24,7 +24,7 @@ export default function HinglishDemo() {
   }, [animated])
 
   return (
-    <section style={{ padding: '76px 24px 68px' }}>
+    <section style={{ padding: '54px 24px 42px' }}>
       <div style={{ maxWidth: '760px', margin: '0 auto' }}>
         <p
           className="serif-italic"
@@ -33,7 +33,7 @@ export default function HinglishDemo() {
             fontWeight: 400,
             color: 'var(--text-primary)',
             textAlign: 'center',
-            marginBottom: '30px',
+            marginBottom: '20px',
             lineHeight: 1.4,
           }}
         >
@@ -47,7 +47,7 @@ export default function HinglishDemo() {
             border: '1px solid rgba(26,158,122,0.2)',
             borderLeft: '3px solid var(--accent)',
             borderRadius: '16px',
-            padding: '28px',
+            padding: '22px 24px',
             boxShadow: '0 10px 32px rgba(28,26,22,0.04)',
           }}
         >
@@ -59,7 +59,7 @@ export default function HinglishDemo() {
               justifyContent: 'center',
               gap: '3px',
               height: '52px',
-              marginBottom: '28px',
+              marginBottom: '20px',
             }}
           >
             {BAR_HEIGHTS.map((h, i) => (
@@ -121,7 +121,7 @@ export default function HinglishDemo() {
         <p
           style={{
             textAlign: 'center',
-            marginTop: '16px',
+            marginTop: '12px',
             fontSize: '13px',
             color: 'var(--text-secondary)',
           }}

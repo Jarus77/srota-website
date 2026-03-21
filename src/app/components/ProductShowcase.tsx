@@ -7,14 +7,14 @@ export default function ProductShowcase() {
   const [hovered, setHovered] = useState(false)
 
   return (
-    <section style={{ padding: '80px 24px' }}>
-      <div style={{ maxWidth: '900px', margin: '0 auto', textAlign: 'center' }}>
+    <section style={{ padding: '54px 24px 56px' }}>
+      <div style={{ maxWidth: '980px', margin: '0 auto', textAlign: 'center' }}>
         <h2
           className="serif"
           style={{
             fontSize: 'clamp(32px, 4vw, 42px)',
             fontWeight: 400,
-            marginBottom: '48px',
+            marginBottom: '28px',
             color: 'var(--text-primary)',
           }}
         >
@@ -28,7 +28,7 @@ export default function ProductShowcase() {
             display: 'inline-block',
             width: '100%',
             border: '1px solid rgba(0,0,0,0.1)',
-            borderRadius: '16px',
+            borderRadius: '18px',
             overflow: 'hidden',
             boxShadow: '0 24px 64px rgba(0,0,0,0.15)',
             transform: hovered

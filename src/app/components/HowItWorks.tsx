@@ -82,15 +82,15 @@ function WaveformPreview() {
 
 export default function HowItWorks() {
   return (
-    <section id="how-it-works" style={{ padding: '96px 24px' }}>
-      <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
+    <section id="how-it-works" style={{ padding: '76px 24px' }}>
+      <div style={{ maxWidth: '980px', margin: '0 auto' }}>
         <h2
           className="serif"
           style={{
             fontSize: 'clamp(32px, 4vw, 42px)',
             fontWeight: 400,
             textAlign: 'center',
-            marginBottom: '64px',
+            marginBottom: '40px',
             color: 'var(--text-primary)',
           }}
         >
@@ -100,8 +100,8 @@ export default function HowItWorks() {
         <div
           style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))',
-            gap: '0',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
+            gap: '18px',
             position: 'relative',
           }}
         >
@@ -111,47 +111,51 @@ export default function HowItWorks() {
               style={{
                 display: 'flex',
                 flexDirection: 'column',
-                padding: '32px',
+                padding: '24px 22px 26px',
                 position: 'relative',
+                borderRadius: '22px',
+                border: '1px solid rgba(26,158,122,0.12)',
+                background: 'rgba(255,255,255,0.7)',
+                boxShadow: '0 8px 24px rgba(28,26,22,0.04)',
               }}
             >
-              {/* Connector */}
-              {i < steps.length - 1 && (
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '18px' }}>
                 <div
+                  className="serif"
                   style={{
-                    position: 'absolute',
-                    top: '48px',
-                    right: '-1px',
-                    width: '2px',
-                    height: '40px',
-                    borderRight: '2px dashed rgba(61,217,172,0.3)',
-                    display: 'none',
+                    fontSize: '42px',
+                    fontWeight: 400,
+                    color: 'var(--accent)',
+                    lineHeight: 1,
                   }}
-                  className="step-connector"
-                />
-              )}
-
-              <div
-                className="serif"
-                style={{
-                  fontSize: '48px',
-                  fontWeight: 400,
-                  color: 'var(--accent)',
-                  lineHeight: 1,
-                  marginBottom: '16px',
-                }}
-              >
-                {step.number}
+                >
+                  {step.number}
+                </div>
+                {i < steps.length - 1 && (
+                  <div
+                    style={{
+                      color: 'rgba(61,217,172,0.42)',
+                      fontSize: '18px',
+                      fontWeight: 300,
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '2px',
+                    }}
+                  >
+                    <span style={{ letterSpacing: '2px' }}>···</span>
+                    <span style={{ fontSize: '13px' }}>›</span>
+                  </div>
+                )}
               </div>
 
-              <div style={{ marginBottom: '20px' }}>{step.media}</div>
+              <div style={{ marginBottom: '18px' }}>{step.media}</div>
 
               <h3
                 style={{
                   fontSize: '17px',
                   fontWeight: 500,
                   color: 'var(--text-primary)',
-                  marginBottom: '10px',
+                  marginBottom: '8px',
                 }}
               >
                 {step.title}
@@ -159,27 +163,6 @@ export default function HowItWorks() {
               <p style={{ fontSize: '14px', color: 'var(--text-secondary)', lineHeight: 1.65 }}>
                 {step.body}
               </p>
-
-              {/* Horizontal dashed connector between cards */}
-              {i < steps.length - 1 && (
-                <div
-                  style={{
-                    position: 'absolute',
-                    top: '56px',
-                    right: '-24px',
-                    zIndex: 2,
-                    color: 'rgba(61,217,172,0.4)',
-                    fontSize: '20px',
-                    fontWeight: 300,
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '2px',
-                  }}
-                >
-                  <span style={{ letterSpacing: '2px' }}>···</span>
-                  <span style={{ fontSize: '14px' }}>›</span>
-                </div>
-              )}
             </div>
           ))}
         </div>

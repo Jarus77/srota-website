@@ -43,7 +43,7 @@ export default function Features() {
   const [hovered, setHovered] = useState<number | null>(null)
 
   return (
-    <section id="features" style={{ padding: '96px 24px' }}>
+    <section id="features" style={{ padding: '76px 24px 72px' }}>
       <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
         <h2
           className="serif"
@@ -62,7 +62,7 @@ export default function Features() {
             width: '48px',
             height: '1px',
             background: 'var(--accent)',
-            margin: '0 auto 56px',
+            margin: '0 auto 40px',
           }}
         />
 
@@ -70,7 +70,7 @@ export default function Features() {
           style={{
             display: 'grid',
             gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
-            gap: '24px',
+            gap: '20px',
           }}
         >
           {features.map((f, i) => (
@@ -89,12 +89,12 @@ export default function Features() {
               }}
             >
               {/* Image zone */}
-              <div style={{ height: '200px', position: 'relative', overflow: 'hidden', background: '#f5f5f5' }}>
+              <div style={{ height: '176px', position: 'relative', overflow: 'hidden', background: '#f5f5f5' }}>
                 <Image
                   src={f.img}
                   alt={f.title}
                   fill
-                  style={{ objectFit: 'contain', padding: '12px' }}
+                  style={{ objectFit: 'contain', padding: '10px' }}
                   sizes="(max-width: 768px) 100vw, 380px"
                 />
                 {/* Fade to white at bottom */}
@@ -130,8 +130,8 @@ export default function Features() {
               </div>
 
               {/* Text zone */}
-              <div style={{ padding: '28px 28px 32px' }}>
-                <h3 style={{ fontSize: '17px', fontWeight: 500, color: '#09090F', marginBottom: '10px' }}>
+              <div style={{ padding: '24px 24px 26px' }}>
+                <h3 style={{ fontSize: '17px', fontWeight: 500, color: '#09090F', marginBottom: '8px' }}>
                   {f.title}
                 </h3>
                 <p style={{ fontSize: '14px', color: 'rgba(9,9,15,0.55)', lineHeight: 1.65 }}>

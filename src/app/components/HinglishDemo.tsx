@@ -24,7 +24,7 @@ export default function HinglishDemo() {
   }, [animated])
 
   return (
-    <section style={{ padding: '96px 24px' }}>
+    <section style={{ padding: '76px 24px 68px' }}>
       <div style={{ maxWidth: '760px', margin: '0 auto' }}>
         <p
           className="serif-italic"
@@ -33,7 +33,7 @@ export default function HinglishDemo() {
             fontWeight: 400,
             color: 'var(--text-primary)',
             textAlign: 'center',
-            marginBottom: '48px',
+            marginBottom: '30px',
             lineHeight: 1.4,
           }}
         >
@@ -46,8 +46,9 @@ export default function HinglishDemo() {
             background: 'rgba(255,255,255,0.55)',
             border: '1px solid rgba(26,158,122,0.2)',
             borderLeft: '3px solid var(--accent)',
-            borderRadius: '12px',
-            padding: '32px',
+            borderRadius: '16px',
+            padding: '28px',
+            boxShadow: '0 10px 32px rgba(28,26,22,0.04)',
           }}
         >
           {/* Waveform */}
@@ -120,7 +121,7 @@ export default function HinglishDemo() {
         <p
           style={{
             textAlign: 'center',
-            marginTop: '20px',
+            marginTop: '16px',
             fontSize: '13px',
             color: 'var(--text-secondary)',
           }}

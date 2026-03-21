@@ -1,7 +1,5 @@
 'use client'
 
-import Image from 'next/image'
-
 import { DMG_DOWNLOAD_URL } from '../downloadUrl'
 
 export default function DownloadCTA() {
@@ -9,12 +7,25 @@ export default function DownloadCTA() {
     <section
       id="download"
       style={{
-        padding: '120px 24px',
+        padding: '32px 24px 88px',
         textAlign: 'center',
-        borderTop: '1px solid rgba(0,0,0,0.07)',
       }}
     >
-      <div style={{ maxWidth: '600px', margin: '0 auto', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '24px' }}>
+      <div
+        style={{
+          maxWidth: '700px',
+          margin: '0 auto',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          gap: '20px',
+          padding: '40px 28px',
+          borderRadius: '28px',
+          border: '1px solid rgba(0,0,0,0.08)',
+          background: 'rgba(255,255,255,0.72)',
+          boxShadow: '0 18px 48px rgba(28,26,22,0.06)',
+        }}
+      >
         <h2
           className="serif"
           style={{
@@ -35,7 +46,7 @@ export default function DownloadCTA() {
             gap: '10px',
             background: 'var(--accent)',
             color: '#fff',
-            padding: '16px 44px',
+            padding: '16px 40px',
             borderRadius: '999px',
             textDecoration: 'none',
             fontSize: '17px',
@@ -58,7 +69,7 @@ export default function DownloadCTA() {
           </svg>
         </a>
 
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
           <p style={{ fontSize: '13px', color: 'var(--text-secondary)' }}>
             Requires macOS 14+ · Apple Silicon only
           </p>
@@ -67,7 +78,7 @@ export default function DownloadCTA() {
           </p>
         </div>
 
-        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '10px', marginTop: '8px' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '10px', marginTop: '4px' }}>
           <p style={{ fontSize: '13px', color: 'var(--text-secondary)', letterSpacing: '0.01em' }}>
             Questions, feedback, or just want to say hi?
           </p>

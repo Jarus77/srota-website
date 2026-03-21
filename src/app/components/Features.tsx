@@ -26,16 +26,15 @@ const features = [
     body: 'Cursor-aware typing. Works in Slack, Notion, VSCode, Terminal, Mail — anywhere. No integrations needed.',
   },
   {
-    img: '/choice.jpeg',
+    img: '/noise.jpeg',
     icon: (
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-        <rect x="1" y="5" width="22" height="14" rx="3" stroke="#3DD9AC" strokeWidth="1.5"/>
-        <circle cx="16" cy="12" r="3" stroke="#3DD9AC" strokeWidth="1.5"/>
-        <path d="M8 9h3M8 12h2M8 15h3" stroke="#3DD9AC" strokeWidth="1.5" strokeLinecap="round"/>
+        <path d="M4 10v4M8 7v10M12 4v16M16 7v10M20 10v4" stroke="#3DD9AC" strokeWidth="1.5" strokeLinecap="round"/>
+        <path d="M2.5 12c0-2.5 2-4.5 4.5-4.5M21.5 12c0-2.5-2-4.5-4.5-4.5" stroke="#3DD9AC" strokeWidth="1.5" strokeLinecap="round" opacity="0.7"/>
       </svg>
     ),
-    title: 'Hinglish or English — your choice',
-    body: 'Toggle Hinglish mode from the menu bar. Code-switched Hindi + English when you need it — Roman script, natural flow.',
+    title: 'Noise-aware recording',
+    body: 'Designed to stay usable in real rooms, not just silent ones. Srota focuses on your voice so dictation feels steady and reliable.',
   },
 ]
 

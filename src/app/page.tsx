@@ -1,12 +1,10 @@
 import Nav from './components/Nav'
 import Hero from './components/Hero'
-import TrustStrip from './components/TrustStrip'
 import Features from './components/Features'
 import ProductShowcase from './components/ProductShowcase'
 import HowItWorks from './components/HowItWorks'
 import WorksAnywhere from './components/WorksAnywhere'
 import HinglishDemo from './components/HinglishDemo'
-import Privacy from './components/Privacy'
 import DownloadCTA from './components/DownloadCTA'
 
 export default function Home() {
@@ -15,13 +13,11 @@ export default function Home() {
       <Nav />
       <main>
         <Hero />
-        <TrustStrip />
         <Features />
         <ProductShowcase />
         <HowItWorks />
         <WorksAnywhere />
         <HinglishDemo />
-        <Privacy />
         <DownloadCTA />
       </main>
       <footer

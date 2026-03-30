@@ -68,7 +68,7 @@ public/
   screenshot-dashboard.png
   screenshot-menubar.png
   video/
-vercel.json                 Sparkle headers and DMG redirect
+vercel.json                 Sparkle headers and DMG file serving
 ```
 
 ## Notes
@@ -77,7 +77,7 @@ vercel.json                 Sparkle headers and DMG redirect
 - Image optimization is disabled with `images.unoptimized: true`, which is required for static export.
 - The app imports Google fonts through `next/font` in `src/app/layout.tsx`.
 - Production builds require network access to fetch those fonts unless they are vendored locally.
-- `vercel.json` defines Sparkle-specific headers for `appcast.xml` and a stable redirect for `/downloads/Srota.dmg`.
+- `vercel.json` defines Sparkle-specific headers for `appcast.xml` and direct DMG serving headers for `/downloads/*`.
 
 ## Sparkle Updates
 
@@ -89,20 +89,20 @@ Srota uses Sparkle with a stable appcast URL and a stable DMG URL hosted on `sus
 
 ### Future release process
 
-1. Upload the new signed `Srota.dmg` asset to the GitHub release for the target version.
-2. Record the exact DMG byte length and signed `sparkle:edSignature`.
-3. Update `public/appcast.xml` with the new version, dates, enclosure metadata, and release notes URL.
-4. Add `public/release-notes/<version>.html` if you want Sparkle release notes for that version.
-5. Update the redirect target in `vercel.json` so `/downloads/Srota.dmg` points at the current GitHub asset.
-6. Deploy the website so `susrota.com` serves the new appcast and redirect.
+1. Copy the new signed `Srota.dmg` into `public/downloads/Srota.dmg`.
+2. Optionally also copy the versioned file to `public/downloads/Srota-<version>.dmg` for archival downloads.
+3. Record the exact DMG byte length and signed `sparkle:edSignature`.
+4. Update `public/appcast.xml` with the new version, dates, enclosure metadata, and release notes URL.
+5. Add `public/release-notes/<version>.html` if you want Sparkle release notes for that version.
+6. Deploy the website so `susrota.com` serves the new appcast and DMG directly.
 
-Keep old GitHub release assets and old release-notes pages if you want historical versions to remain accessible.
+Old versioned DMGs can remain in `public/downloads/` if you want historical versions to stay accessible.
 
 ## Deploy
 
 The site is a static export, but the Sparkle setup in this repo assumes Vercel so `vercel.json` can provide:
 
 - `appcast.xml` cache-control headers
-- the stable `/downloads/Srota.dmg` redirect to the current GitHub release asset
+- direct hosting for `/downloads/Srota.dmg` and any versioned DMGs in `public/downloads/`
 
-If you move to another host later, you will need equivalent redirect and header rules there.
+If you move to another host later, you will need equivalent static file serving and header rules there.

@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { DMG_DOWNLOAD_URL } from '../downloadUrl'
+import { trackSrotaDownload } from '../trackDownload'
 
 const WORDS = ['Local', 'No account', 'No subscription']
 
@@ -236,6 +237,7 @@ export default function Hero() {
               fontWeight: 500,
               transition: 'transform 200ms, box-shadow 200ms',
             }}
+            onClick={() => trackSrotaDownload('hero')}
             onMouseEnter={e => {
               e.currentTarget.style.transform = 'translateY(-2px)'
               e.currentTarget.style.boxShadow = '0 8px 28px rgba(247,243,238,0.25)'

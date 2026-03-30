@@ -1,6 +1,7 @@
 'use client'
 
 import { DMG_DOWNLOAD_URL } from '../downloadUrl'
+import { trackSrotaDownload } from '../trackDownload'
 
 export default function DownloadCTA() {
   return (
@@ -53,6 +54,7 @@ export default function DownloadCTA() {
             fontWeight: 600,
             transition: 'transform 200ms, box-shadow 200ms',
           }}
+          onClick={() => trackSrotaDownload('download_cta')}
           onMouseEnter={e => {
             e.currentTarget.style.transform = 'translateY(-2px)'
             e.currentTarget.style.boxShadow = '0 12px 32px rgba(61,217,172,0.3)'

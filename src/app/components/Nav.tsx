@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react'
 
 import { DMG_DOWNLOAD_URL } from '../downloadUrl'
+import { trackSrotaDownload } from '../trackDownload'
 
 export default function Nav() {
   const [scrollY, setScrollY] = useState(0)
@@ -174,6 +175,7 @@ function DownloadBtn({ fullWidth }: { fullWidth?: boolean }) {
         textAlign: fullWidth ? 'center' : 'left',
         transition: 'opacity 200ms',
       }}
+      onClick={() => trackSrotaDownload(fullWidth ? 'nav_mobile' : 'nav')}
       onMouseEnter={e => (e.currentTarget.style.opacity = '0.85')}
       onMouseLeave={e => (e.currentTarget.style.opacity = '1')}
     >

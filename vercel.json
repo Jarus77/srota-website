@@ -40,7 +40,7 @@
     },
     {
       "source": "/downloads/Srota.dmg",
-      "destination": "https://github.com/Jarus77/srota-mac/releases/download/v0.1.4/Srota.dmg",
+      "destination": "https://github.com/Jarus77/srota-releases/releases/download/v0.1.4/Srota.dmg",
       "permanent": false
     }
   ]

@@ -5,14 +5,14 @@
         <description>Srota update feed</description>
         <language>en</language>
         <item>
-            <title>0.1.3</title>
-            <pubDate>Sat, 21 Mar 2026 17:29:40 +0530</pubDate>
-            <sparkle:version>0.1.3</sparkle:version>
-            <sparkle:shortVersionString>0.1.3</sparkle:shortVersionString>
+            <title>0.1.4</title>
+            <pubDate>Mon, 30 Mar 2026 14:07:19 +0530</pubDate>
+            <sparkle:version>0.1.4</sparkle:version>
+            <sparkle:shortVersionString>0.1.4</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>10.13</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <sparkle:releaseNotesLink>https://susrota.com/release-notes/0.1.3.html</sparkle:releaseNotesLink>
-            <enclosure url="https://susrota.com/downloads/Srota.dmg" length="14699320" type="application/octet-stream" sparkle:edSignature="fKbMtH1ikSkEMVo2FKw4OWoR/wGWZiVXVeHEVdUHiRdqUrXxnJUO6szw4AaXhwEiYjOL/cWFBr1SRKVS+qw0Ag=="/>
+            <sparkle:releaseNotesLink>https://susrota.com/release-notes/0.1.4.html</sparkle:releaseNotesLink>
+            <enclosure url="https://susrota.com/downloads/Srota.dmg" length="14712586" type="application/octet-stream" sparkle:edSignature="26zE5cmVLAVyAfb/3eP9W63xiKq4C6qtzpX2s+v37u9c2z+i3bX+tOYWA/a2do1oidKMEPrDnc0vi0ZbGYPRCQ=="/>
         </item>
     </channel>
 </rss>
